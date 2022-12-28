@@ -44,6 +44,7 @@ class Book:
     def delete_book(self):
         book_id = int(input("Enter the book id : "))
         self.cursor.execute(f"""delete from users where id={book_id}""")
+        self.db.commit()
 
     def search_book_by_name(self):
         keyword = input("Enter the book name or prefix: ")
