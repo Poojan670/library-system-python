@@ -5,6 +5,9 @@ Features
 -------------
 
 System asks for admin setup during the initial startup.
+
+System requires for admin configs at every other startup (Similar to login)
+
 Admin can then, manage the library system with the following features / choices :
 
     (1). Add book
