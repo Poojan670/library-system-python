@@ -101,11 +101,14 @@ def runner(test_name):
     unittest.TextTestRunner().run(test_name)
 
 
+def tearDown():
+    if os.path.exists("test.db"):
+        os.remove("test.db")
+
+
 if __name__ == '__main__':
     db_tests = unittest.defaultTestLoader.loadTestsFromTestCase(DBTests)
     user_test = unittest.defaultTestLoader.loadTestsFromTestCase(DBTests)
     runner(db_tests)
     runner(user_test)
-
-    if os.path.exists("test.db"):
-        os.remove("test.db")
+    tearDown()

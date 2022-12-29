@@ -1,5 +1,4 @@
-Simple Console Library Management System using Python and SQLite3
-=======================================
+**_Simple Console Library Management System using Python and SQLite3_**
 
 Features
 -------------
