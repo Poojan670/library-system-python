@@ -24,5 +24,7 @@ Admin can then, manage the library system with the following features / choices 
 
 
 Run The Application:
+    
+    py tests.py ( Optional - For Test Cases to succeed! )
 
     py main.py
